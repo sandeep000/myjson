@@ -3,7 +3,7 @@
       { 
          "BundleId": "string",
          "DirectoryId": "string",
-         "RootVolumeEncryptionEnabled": boolean,
+         "RootVolumeEncryptionEnabled": "boolean",
          "Tags": [ 
             { 
                "Key": "string",
@@ -11,14 +11,14 @@
             }
          ],
          "UserName": "string",
-         "UserVolumeEncryptionEnabled": boolean,
+         "UserVolumeEncryptionEnabled": "boolean",
          "VolumeEncryptionKey": "string",
          "WorkspaceProperties": { 
             "ComputeTypeName": "string",
-            "RootVolumeSizeGib": number,
+            "RootVolumeSizeGib": "number",
             "RunningMode": "string",
-            "RunningModeAutoStopTimeoutInMinutes": number,
-            "UserVolumeSizeGib": number
+            "RunningModeAutoStopTimeoutInMinutes": "number",
+            "UserVolumeSizeGib": "number"
          }
       }
    ]
