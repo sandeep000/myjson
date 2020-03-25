@@ -1,25 +1,24 @@
 {
    "Workspaces": [ 
       { 
-         "BundleId": ${1},
-         "DirectoryId": ${2},
-         "RootVolumeEncryptionEnabled": ${3},
+         "UserName": ${1},
+         "BundleId": ${2},
+         "DirectoryId": ${3},
+         "RootVolumeEncryptionEnabled": true,
+         "UserVolumeEncryptionEnabled": true,
+         "VolumeEncryptionKey": ${4},
+         "WorkspaceProperties": { 
+            "RootVolumeSizeGib": ${5},
+            "UserVolumeSizeGib": ${6}
+            "RunningMode": "AUTO_STOP",
+            "RunningModeAutoStopTimeoutInMinutes": 60,
+         }
          "Tags": [ 
             { 
                "Key": "ProjectCode",
-               "Value": ${4}
+               "Value": ${7}
             }
-         ],
-         "UserName": ${5},
-         "UserVolumeEncryptionEnabled": ${6},
-         "VolumeEncryptionKey": ${7},
-         "WorkspaceProperties": { 
-            "ComputeTypeName": "string",
-            "RootVolumeSizeGib": ${8},
-            "RunningMode": ${9},
-            "RunningModeAutoStopTimeoutInMinutes": ${10},
-            "UserVolumeSizeGib": ${11}
-         }
+         ],  
       }
    ]
 }
